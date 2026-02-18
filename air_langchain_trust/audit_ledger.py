@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .config import AuditLedgerConfig, RiskLevel
+from .config import AuditLedgerConfig
 
 GENESIS_HASH = "0" * 64
 

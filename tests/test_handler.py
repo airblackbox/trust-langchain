@@ -10,7 +10,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from air_langchain_trust.config import AirTrustConfig, ConsentGateConfig, RiskLevel
+from air_langchain_trust.config import AirTrustConfig, ConsentGateConfig
 from air_langchain_trust.errors import ConsentDeniedError, InjectionBlockedError
 from air_langchain_trust.handler import AirTrustCallbackHandler
 

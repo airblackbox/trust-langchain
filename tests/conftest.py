@@ -5,14 +5,13 @@ import tempfile
 
 import pytest
 
+from air_langchain_trust.audit_ledger import AuditLedger
 from air_langchain_trust.config import (
-    AirTrustConfig,
     AuditLedgerConfig,
     ConsentGateConfig,
     InjectionDetectionConfig,
     VaultConfig,
 )
-from air_langchain_trust.audit_ledger import AuditLedger
 from air_langchain_trust.consent_gate import ConsentGate
 from air_langchain_trust.data_vault import DataVault
 from air_langchain_trust.injection_detector import InjectionDetector

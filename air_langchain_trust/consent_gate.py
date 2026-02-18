@@ -21,9 +21,8 @@ import uuid
 from datetime import datetime, timezone
 from typing import Any
 
-from .config import ConsentGateConfig, RiskLevel, RISK_ORDER
 from .audit_ledger import AuditLedger
-
+from .config import RISK_ORDER, ConsentGateConfig, RiskLevel
 
 # Default risk classification for common tool patterns
 TOOL_RISK_MAP: dict[str, RiskLevel] = {
@@ -173,7 +172,7 @@ class ConsentGate:
         if not approved:
             return {
                 "blocked": True,
-                "reason": f"Tool call rejected by user",
+                "reason": "Tool call rejected by user",
             }
 
         return {"blocked": False}

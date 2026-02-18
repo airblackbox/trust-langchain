@@ -1,12 +1,9 @@
 """Tests for the DataVault — sensitive data tokenization."""
 
-import re
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 
-import pytest
-
-from air_langchain_trust.data_vault import DataVault, VaultToken
 from air_langchain_trust.config import VaultConfig
+from air_langchain_trust.data_vault import DataVault
 
 
 class TestTokenize:

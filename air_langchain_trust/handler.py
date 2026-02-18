@@ -22,13 +22,12 @@ Usage:
 
 from __future__ import annotations
 
-import json
 import logging
-from typing import Any, Dict, List, Optional, Sequence
+from typing import Any, Dict, List, Optional
 from uuid import UUID
 
-from .config import AirTrustConfig
 from .audit_ledger import AuditLedger
+from .config import AirTrustConfig
 from .consent_gate import ConsentGate
 from .data_vault import DataVault
 from .errors import ConsentDeniedError, InjectionBlockedError
