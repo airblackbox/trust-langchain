@@ -1,9 +1,8 @@
 """Tests for the InjectionDetector — prompt injection pattern scanning."""
 
-import pytest
 
-from air_langchain_trust.injection_detector import InjectionDetector
 from air_langchain_trust.config import InjectionDetectionConfig
+from air_langchain_trust.injection_detector import InjectionDetector
 
 
 class TestDetection:

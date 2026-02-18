@@ -14,7 +14,7 @@ from __future__ import annotations
 import json
 import re
 import uuid
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Any
 
 from .config import VaultConfig
@@ -71,7 +71,9 @@ BUILTIN_PATTERNS: list[TokenizationPattern] = [
         "Private Key Block",
         "credential",
         re.compile(
-            r"-----BEGIN (?:RSA |EC )?PRIVATE KEY-----[\s\S]*?-----END (?:RSA |EC )?PRIVATE KEY-----"
+            r"-----BEGIN (?:RSA |EC )?PRIVATE KEY-----"
+            r"[\s\S]*?"
+            r"-----END (?:RSA |EC )?PRIVATE KEY-----"
         ),
     ),
     TokenizationPattern(

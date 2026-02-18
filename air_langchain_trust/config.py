@@ -7,7 +7,6 @@ Sensible defaults match the TypeScript openclaw-air-trust plugin.
 
 from __future__ import annotations
 
-import os
 from enum import Enum
 from pathlib import Path
 from typing import Literal

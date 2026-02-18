@@ -1,11 +1,8 @@
 """Tests for the AuditLedger — tamper-evident HMAC-SHA256 chain."""
 
-import json
 import os
 
-import pytest
-
-from air_langchain_trust.audit_ledger import AuditLedger, AuditEntry, GENESIS_HASH
+from air_langchain_trust.audit_ledger import GENESIS_HASH, AuditLedger
 from air_langchain_trust.config import AuditLedgerConfig
 
 
