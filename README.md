@@ -144,17 +144,17 @@ handler.get_vault_stats()   # → {"total_tokens": 5, "by_category": {"api_key":
 
 | Repository | Purpose |
 |-----------|---------|
-| [air-blackbox-gateway](https://github.com/nostalgicskinco/air-blackbox-gateway) | Go proxy gateway |
-| [air-python-sdk](https://github.com/nostalgicskinco/air-python-sdk) | Python SDK |
-| [openclaw-air-trust](https://github.com/nostalgicskinco/openclaw-air-trust) | TypeScript trust layer for OpenClaw |
-| [air-crewai-trust](https://github.com/nostalgicskinco/air-crewai-trust) | Python trust layer for CrewAI |
-| **air-langchain-trust** | **Python trust layer for LangChain** (this repo) |
+| [gateway](https://github.com/airblackbox/gateway) | Go proxy gateway |
+| [python-sdk](https://github.com/airblackbox/python-sdk) | Python SDK |
+| [trust-openclaw](https://github.com/airblackbox/trust-openclaw) | TypeScript trust layer for OpenClaw |
+| [trust-crewai](https://github.com/airblackbox/trust-crewai) | Python trust layer for CrewAI |
+| **trust-langchain** | **Python trust layer for LangChain** (this repo) |
 
 ## Development
 
 ```bash
-git clone https://github.com/nostalgicskinco/air-langchain-trust.git
-cd air-langchain-trust
+git clone https://github.com/airblackbox/trust-langchain.git
+cd trust-langchain
 pip install -e ".[dev]"
 pytest tests/ -v
 ```
