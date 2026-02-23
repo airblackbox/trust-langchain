@@ -37,9 +37,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/nostalgicskinco/air-langchain-trust"
-Repository = "https://github.com/nostalgicskinco/air-langchain-trust"
-Issues = "https://github.com/nostalgicskinco/air-langchain-trust/issues"
+Homepage = "https://github.com/airblackbox/trust-langchain"
+Repository = "https://github.com/airblackbox/trust-langchain"
+Issues = "https://github.com/airblackbox/trust-langchain/issues"
 Documentation = "https://airblackbox.com/docs"
 
 [tool.setuptools.packages.find]
